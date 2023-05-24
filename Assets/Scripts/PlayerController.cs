@@ -57,6 +57,14 @@ public class PlayerController : Unit
         {
             animator.SetTrigger("Taunt");
         }
+        if (Input.GetButtonDown("Rumba"))
+        {
+            animator.SetTrigger("Dance");
+        }
+        if (Input.GetButtonDown("Sit"))
+        {
+            animator.SetTrigger("Sitdown");
+        }
         GetComponent<Rigidbody>().velocity = transform.TransformVector(input);
     }
 
